@@ -1,0 +1,19 @@
+
+{
+    "getFull": {
+        "name": "Get Game Details",
+        "url": "https://wp3api2-hffncjc6dte5f9cr.centralus-01.azurewebsites.net/api/users/getfull?email=jonathangrundman@hotmail.com&password=ItAvwsw16",
+        "response": {
+            "email": "jonathangrundman@hotmail.com",
+            "firstName": "Joe",
+            "gatheringStorm": false,
+            "guid": "fdce6020-9f01-467e-a1f6-b82be89d40bc", 
+            "id": 17,
+            "lastLogon": "2025-06-10T07:36:25.1347431+00:00",
+            "lastName": "Grundman",
+            "password": null,
+            "subscriptions": "14:1:3/1/2019:1/1/2021^889:2:4/26/2021:2/1/3000^"
+        }
+    }
+    
+}
