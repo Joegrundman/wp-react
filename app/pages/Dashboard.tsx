@@ -2,6 +2,11 @@ import type { ReactNode } from "react";
 import Link from "~/components/Link";
 import Button from "~/components/Button";
 import Panel from "~/components/Panel";
+import recentGameList from "../../data/recentGameList.json"
+
+const games = [
+
+]
 
 type DashboardProps = {
   style?: React.CSSProperties;
@@ -28,10 +33,11 @@ const Dashboard: React.FC<DashboardProps> = ({ className }) => (
       <Link to="/auth">Login</Link>
     </nav>
     <Panel>
-      <Button small>My game 1</Button>
+{recentGameList.map(x => <div><Link small to={`game/${x.gameFileId}`}>{x.title}</Link>{x.ownerName}</div>)}
+      {/* <Button small>My game 1</Button>
       <Button small>My game 2</Button>
       <Button small>My game 3</Button>
-      <Button small>My game 4</Button>
+      <Button small>My game 4</Button> */}
     </Panel>
   </div>
 );

@@ -6,13 +6,6 @@ type PanelProps = {
   className?: string;
 };
 
-const panelStyle: React.CSSProperties = {
-  backgroundColor: "slategray",
-  padding: "1.5rem",
-  borderRadius: "8px",
-  color: "white",
-};
-
 const panelStyles = `
   p-4
   rounded-sm
