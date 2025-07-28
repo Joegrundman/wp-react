@@ -1,0 +1,40 @@
+{
+    "games": [
+        {
+            "title": "My game",
+            "id": "1234",
+            "player": "(auto saved)",
+            "year": 1939,
+            "season": "Axis Fall",
+            "phase": "Air staging",
+            "saveDate": "06-11-2025 01:56 AM"
+        },
+        {
+            "title": "My game",
+            "id": "1235",
+            "player": "Joe G",
+            "year": 1939,
+            "season": "Axis Fall",
+            "phase": "Air staging",
+            "saveDate": "06-16-2025 06:59 AM"
+        },
+        {
+            "title": "Mwc",
+            "id": "1236",
+            "player": "Joe G",
+            "year": 1914,
+            "season": "Axis Summer",
+            "phase": "Air staging",
+            "saveDate": "03-05-2025 03:18 AM"
+        },
+                {
+            "title": "wc test",
+            "id": "1237",
+            "player": "Joe G",
+            "year": 1914,
+            "season": "Axis Summer",
+            "phase": "Air staging",
+            "saveDate": "02-21-2025 04:25 AM"
+        }
+    ]
+}
