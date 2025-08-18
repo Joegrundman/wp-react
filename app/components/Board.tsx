@@ -13,6 +13,8 @@ const boardStyles = `
   text-white
   border-2
   border-slate-900
+  w-full
+  h-full
 `;
 
 const Board: React.FC<BoardProps> = ({ children, className }) => (

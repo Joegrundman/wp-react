@@ -44,20 +44,22 @@ const Dashboard: React.FC<DashboardProps> = ({ className }) => {
       </nav>
       <Panel>
         <table>
-          {games.map((x) => (
-            <tr key={x.id}>
-              <td>
-                <Link to={`/game/${x.id}`} small>
-                  {x.title}
-                </Link>
-              </td>
-              <td>{x.player}</td>
-              <td>{x.phase}</td>
-              <td>{x.year}</td>
-              <td>{x.season}</td>
-              <td>{x.saveDate}</td>
-            </tr>
-          ))}
+          <tbody>
+            {games.map((x) => (
+              <tr key={x.id}>
+                <td>
+                  <Link to={`/game/${x.id}`} small>
+                    {x.title}
+                  </Link>
+                </td>
+                <td>{x.player}</td>
+                <td>{x.phase}</td>
+                <td>{x.year}</td>
+                <td>{x.season}</td>
+                <td>{x.saveDate}</td>
+              </tr>
+            ))}
+          </tbody>
         </table>
       </Panel>
     </div>

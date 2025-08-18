@@ -1,6 +1,11 @@
 import React from "react";
 import Board from "~/components/Board";
+import GameFooter from "~/components/GameFooter";
+import GameHeader from "~/components/GameHeader";
+import GameSidebarLeft from "~/components/GameSidebarLeft";
+import GameSidebarRight from "~/components/GameSidebarRight";
 import MapCanvas from "~/components/MapCanvas";
+import Zoom from "~/components/Zoom";
 import type { Theater } from "~/types/theater";
 
 type GameProps = {
@@ -22,12 +27,21 @@ const Game: React.FC<GameProps> = (props) => {
 
   return (
     <div>
-      <h1>Game Page</h1>
-      <p>Game ID: {props.gameId}</p>
-      <p>Welcome to the Game!</p>
-      <Board>
-        <MapCanvas gameState={gameState} />
-      </Board>
+      <GameHeader />
+      <main>
+        <GameSidebarLeft />
+        <Board style={{ height: "100vh" }}>
+          <MapCanvas gameState={gameState} />
+          <Zoom
+            onZoomChange={(newZoomLevel: number) =>
+              setGameState((x) => ({ ...x, zoomLevel: newZoomLevel }))
+            }
+          />
+        </Board>
+        <GameSidebarRight />
+      </main>
+
+      <GameFooter />
     </div>
   );
 };

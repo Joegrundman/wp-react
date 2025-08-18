@@ -1,8 +1,30 @@
-<game title="My game" publicGame="false" version="3.1371" globalNews="" britishNews="" usNews=""
-    russianNews="" germanNews="" italianNews="" japaneseNews="" rgt="0" usat="0" usjt="0"
-    brpsGermany="0" brpsItaly="0" brpsFrance="0" brpsJapan="0" brpsBritain="0" brpsRussia="0"
-    brpsUS="0" brpsChina="0" save-user="17" starting-year="1939" starting-season="2"
-    current-phase-id="1225" game-type-id="0" game-id="-2">
+<game
+    title="My game"
+    publicGame="false"
+    version="3.1371"
+    globalNews=""
+    britishNews="" usNews=""
+    russianNews=""
+    germanNews=""
+    italianNews=""
+    japaneseNews=""
+    rgt="0"
+    usat="0"
+    usjt="0"
+    brpsGermany="0"
+    brpsItaly="0"
+    brpsFrance="0"
+    brpsJapan="0"
+    brpsBritain="0"
+    brpsRussia="0"
+    brpsUS="0"
+    brpsChina="0"
+    save-user="17"
+    starting-year="1939"
+    starting-season="2"
+    current-phase-id="1225"
+    game-type-id="0"
+    game-id="-2">
     <info title="My game">
         <map />
     </info>
