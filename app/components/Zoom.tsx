@@ -28,10 +28,11 @@ const Zoom: React.FC<ZoomProps> = ({
 
   return (
     <div
-      className="fixed bottom-0 right-0 bg-amber-900 border-2 border-slate-200 p-2 rounded-md"
+      className="absolute bottom-0 right-0 bg-amber-900 border-2 border-slate-200 p-2 rounded-md"
       style={{ display: "inline-flex", alignItems: "center", gap: 8 }}
     >
       <button
+        className="cursor-pointer"
         onClick={() => handleZoom(step)}
         disabled={zoom >= max}
         aria-label="Zoom in"
@@ -40,6 +41,7 @@ const Zoom: React.FC<ZoomProps> = ({
       </button>
       <span style={{ minWidth: 40, textAlign: "center" }}>{zoom}x</span>
       <button
+        className="cursor-pointer"
         onClick={() => handleZoom(-step)}
         disabled={zoom <= min}
         aria-label="Zoom out"

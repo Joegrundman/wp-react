@@ -5,7 +5,6 @@ import GameHeader from "~/components/GameHeader";
 import GameSidebarLeft from "~/components/GameSidebarLeft";
 import GameSidebarRight from "~/components/GameSidebarRight";
 import MapCanvas from "~/components/MapCanvas";
-import Zoom from "~/components/Zoom";
 import type { Theater } from "~/types/theater";
 
 type GameProps = {
@@ -14,10 +13,10 @@ type GameProps = {
   gameId: string;
 };
 
-export type GameState = {
+export interface GameState {
   zoomLevel: number;
   theater: Theater;
-};
+}
 
 const Game: React.FC<GameProps> = (props) => {
   const [gameState, setGameState] = React.useState<GameState>({
@@ -29,19 +28,14 @@ const Game: React.FC<GameProps> = (props) => {
     <div>
       <GameHeader />
       <main>
-        <GameSidebarLeft />
+        <GameSidebarLeft gameState={gameState} setGameState={setGameState} />
         <Board style={{ height: "100vh" }}>
           <MapCanvas gameState={gameState} />
-          <Zoom
-            onZoomChange={(newZoomLevel: number) =>
-              setGameState((x) => ({ ...x, zoomLevel: newZoomLevel }))
-            }
-          />
         </Board>
         <GameSidebarRight />
       </main>
 
-      <GameFooter />
+      <GameFooter gameState={gameState} setGameState={setGameState} />
     </div>
   );
 };
